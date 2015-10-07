@@ -32,7 +32,7 @@ public class Usuario implements Serializable {
     @Column(name = "login")
     private String login;
     @Column(name = "password")
-    private String password;
+    private String password; 
     //Buscar todos
     public Usuario() {
     }
@@ -89,7 +89,9 @@ public class Usuario implements Serializable {
 
     @Override
     public String toString() {
-        return "model.Usuario[ idUsuario=" + idUsuario + " ]";
+        return "Usuario{" + "idUsuario=" + idUsuario + ", login=" + login + ", password=" + password + '}';
     }
+
+   
     
 }
