@@ -5,9 +5,17 @@
         <servlet-name>ServletAutenticar</servlet-name>
         <servlet-class>controller.ServletAutenticar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletAlumnos</servlet-name>
+        <servlet-class>controller.ServletAlumnos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletAutenticar</servlet-name>
         <url-pattern>/autenticar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletAlumnos</servlet-name>
+        <url-pattern>/alumnos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
