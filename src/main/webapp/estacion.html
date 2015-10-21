@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/Estilos.css">
+        <script src="js/angular.js"></script>
+        <script src="js/Estacion.js"></script>
+    </head>
+    <body ng-app="Estacion">
+        <div ng-controller="ctrlEstacion">
+        <h1>Este nuestro primer proyecto lee datos de una estacion</h1>
+        <p style="font-size: 25px">Este es un parrafo que lleva muchas lineas</p>
+        {{mensaje}}
+        <p>La temperatura en esta hora es:{{temperatura}}</p>
+        <table class="table table-bordered"> 
+            <tr class="success"><th>Hora<</th><th>Temperatura</th></tr>
+            <tr ng-repeat="es in esta">
+                <td>{{es.hora}}</td>
+                <td>{{es.temperatura}}</td>
+                <td>{{es.uv}}</td>
+            </tr>
+        </table>  
+         </div>
+    </body>
+</html>
